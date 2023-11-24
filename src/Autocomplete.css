@@ -1,0 +1,12 @@
+.autocomplete {
+    width: 500px;
+    text-align: center;
+    cursor: text;
+  }
+  
+.menu-portal {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    justify-content: center;
+  }
