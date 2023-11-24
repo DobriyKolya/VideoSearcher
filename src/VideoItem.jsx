@@ -1,13 +1,14 @@
 import React from 'react';
 import './VideoItem.css';
 
-function VideoItem({ video }) {
+const VideoItem = ({ video }) => {
   return (
     <li className="video-item">
-      <img src={video.thumbnail} alt={video.title} />
       <p>{video.title}</p>
+      <p>Канал: {video.channel}</p>
+      <p>Дата: {video.date}</p>
     </li>
   );
-}
+};
 
 export default VideoItem;

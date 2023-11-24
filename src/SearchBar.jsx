@@ -1,6 +1,7 @@
+// SearchBar.jsx
 import React, { useState } from 'react';
-import './SearchBar.css';
 import Autocomplete from './Autocomplete';
+import './SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -17,10 +18,9 @@ const SearchBar = ({ onSearch }) => {
     onSearch(query);
   };
 
-  const handleKeyDown = (e) => {
-    if (e.keyCode === 13) {
-      handleSearch();
-    }
+  const handleEnterPress = () => {
+    // Ваш запрос к серверу по нажатию Enter
+    onSearch(query);
   };
 
   return (
@@ -32,6 +32,7 @@ const SearchBar = ({ onSearch }) => {
           onSelect={handleSelect}
           onInputChange={handleInputChange}
           inputValue={query}
+          onEnterPress={handleEnterPress}
         />
         <button onClick={handleSearch}>Поиск</button>
       </div>

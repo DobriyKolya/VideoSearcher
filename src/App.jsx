@@ -1,14 +1,16 @@
 
+
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
+import './App.css';
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = async (query) => {
     try {
-      const response = await fetch(`http://localhost:5173/search?q=${query}`);
+      const response = await fetch(`http://localhost:5173/search?q=${encodeURIComponent(query)}`);
       const data = await response.json();
       setSearchResults(data);
     } catch (error) {
