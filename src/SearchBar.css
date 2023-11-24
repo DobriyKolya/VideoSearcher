@@ -44,6 +44,9 @@ input:focus-visible {
   }
 
   .search-button {
-    position: relative;
+    position: absolute;
     z-index: 1;
+    right: 0.1px;
+    top: 0.2px;
+    height: 56px;
   }

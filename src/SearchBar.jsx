@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   const handleEnterPress = () => {
-    // Ваш запрос к серверу по нажатию Enter
+
     onSearch(query);
   };
 

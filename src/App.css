@@ -10,5 +10,9 @@
   align-items: center;
   margin-top: 50px;
 }
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+}
 
 

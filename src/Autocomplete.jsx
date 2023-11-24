@@ -46,13 +46,15 @@ const Autocomplete = ({ onSelect, onInputChange, inputValue, onEnterPress }) => 
   const customStyles = {
     container:  ()=>({
       width: '100%',
-      textAlign: 'left'
+      textAlign: 'left',
+      maxWidth: '500px',
     }),
     control: (provided, state) => ({
       ...provided,
-      borderRadius: state.menuIsOpen && hasValue ? '10px 0 0 0': '10px 0 0 10px',
+      maxWidth: '100%',
+      borderRadius: state.menuIsOpen && hasValue ? '10px 10px 10px 0': '10px 10px 10px 10px',
       border: '1px solid transparent',
-      padding: '0.6em 1.2em',
+      padding: '0.6em 52px 0.6em 1.2em',
       fontSize: '1em',
       fontWeight: '500',
       fontFamily: 'inherit',
