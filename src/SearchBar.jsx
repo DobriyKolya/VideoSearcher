@@ -14,7 +14,7 @@ const SearchBar = ({ onSearch }) => {
     setQuery(selectedValue);
   };
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
     onSearch(query);
   };
 
@@ -34,7 +34,7 @@ const SearchBar = ({ onSearch }) => {
           inputValue={query}
           onEnterPress={handleEnterPress}
         />
-        <button onClick={handleSearch}>Поиск</button>
+        <button className="search-button" onClick={handleSearch}>Поиск</button>
       </div>
     </div>
   );

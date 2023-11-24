@@ -1,11 +1,18 @@
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .title {
-    font-size: 14px;
-    margin-top: 5px;
-  }
+.video-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  max-width: 500px;
+}
+
+.video-item .title {
+  font-weight: 500;
+  font-size: 16px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
   

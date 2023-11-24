@@ -6,6 +6,9 @@
 }
 .searcher{
   display: flex;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
 }
   
 .search-title {
@@ -38,4 +41,9 @@ input:hover {
 input:focus,
 input:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  .search-button {
+    position: relative;
+    z-index: 1;
   }

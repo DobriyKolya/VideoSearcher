@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 #app {
   justify-content: center;
   display: flex;
@@ -6,3 +10,5 @@
   align-items: center;
   margin-top: 50px;
 }
+
+

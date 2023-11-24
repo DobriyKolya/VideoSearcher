@@ -14,14 +14,24 @@
 }
 
 .video-list-container li {
-  margin: 20px 0;
   padding: 10px;
   background-color: #333;
   border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
 }
 
 .video-list-container h3,
 .video-list-container p {
   margin: 5px 0;
   color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
